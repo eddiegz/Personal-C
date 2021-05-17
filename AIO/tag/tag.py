@@ -2,24 +2,19 @@ infile=open('tagin.txt','r')
 outfile=open('tagout.txt','w')
 n,m=map(int,infile.readline().split())
 
-def binarySearch (arr, l, r, x):
-    if r >= l:
-        mid = l + (r - l) // 2
-        if arr[mid] == x:
-            return mid
-        elif arr[mid] > x:
-            return binarySearch(arr, l, mid-1, x)
-        else:
-            return binarySearch(arr, mid + 1, r, x)
-    else:
-        return -1
-
-list1=[1]
-list2=[2]
+list1=[0]*n
+list2=[0]*n
+list1[0]=1
+list2[0]=1
 for i in range(m):
     a,b=map(int,infile.readline().split())
-    if binarySearch(list1,0,len(list1)-1,a)!=-1:
-        list1.append(b)
+    if list1[a-1]==1:
+        list1[b-1]=1
     else:
-        list2.append(b)
-outfile.write(str(str(len(list1))+' '+str(len(list2))))
+        list2[b-1]=1
+ta=sum(list1)
+tb=sum(list2)
+    
+    
+outfile.write(str(str(ta)+' '+str(tb)))
+
