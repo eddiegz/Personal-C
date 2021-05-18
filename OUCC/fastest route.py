@@ -1,5 +1,5 @@
 start,end=input().split()
-edges=[("ab",1)("ac",1),("be",3),("cd",1),("de",1),("df",2),("eg",1),("fg",1),("ba",1),("ca",1),("eb",3),("dc",1),("ed",1),("fd",2),("ge",1),("gf",1)]
+edges=[("ab",1),("ac",1),("be",3),("cd",1),("de",1),("df",2),("eg",1),("fg",1),("ba",1),("ca",1),("eb",3),("dc",1),("ed",1),("fd",2),("ge",1),("gf",1)]
 paths=[(start,0)]
 while True:
     new_paths=paths
