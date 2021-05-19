@@ -36,44 +36,6 @@ else:
     min1=min(r,b)
     max1=max(r,b)
     if min1<0:
-        '''
-        if min1+s<0:
-            answer=0
-        elif min1+s==0:
-            answer=1
-        else:
-            if max(ro,bo)>=rp:
-                if max(ro,bo)==ro:
-                    if bo<=bp:
-                        answer=s+b
-                    else:
-                        answer=s+r+b-1
-                else:
-                    if ro<=rp:
-                        answer=s+r
-                    else:
-                        answer=s+r+b-1
-            elif max(ro,bo)>=bp:
-                if max(ro,bo)==ro:
-                    if ro<=rp:
-                        answer=s+r
-                    else:
-                        answer=s+b+r-1
-                else:
-                    if bo<=bp:
-                        answer=s+b
-                    else:
-                        answer=s+r+b-1
-            else:
-                if r==b:
-                    if s+b+r<0:
-                        answer=0
-                    elif s+b+r==0:
-                        answer=1
-                    else:
-                        answer=s+b+r+1
-                else:
-                    answer=s+b+r+1'''
         if r<0:
             s+=r
             ro=rp
