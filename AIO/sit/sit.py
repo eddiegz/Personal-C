@@ -5,12 +5,6 @@ nc=int(infile.readline())
 np=r*s
 ps=nc-np
 if np>nc:
-    np=nc
-    ps=0
+    np,ps=nc,0
 
-answer=''
-answer+=str(np)+' '+str(ps)
-
-outfile=open('sitout.txt','w')
-outfile.write(answer)
-outfile.close()
+open('sitout.txt','w').write(str(np)+' '+str(ps))
