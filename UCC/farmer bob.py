@@ -1,8 +1,8 @@
-h=int(input(''))
-t=int(input(''))
-tractor=[int(i) for i in input('').split()]
-m=int(input(''))
-tline=input('')
+h=int(input())
+t=int(input())
+tractor=[int(i) for i in input().split()]
+m=int(input())
+tline=input()
 max1=0
 gap=0
 for i in tline:
