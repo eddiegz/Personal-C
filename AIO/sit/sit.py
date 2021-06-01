@@ -1,10 +1,8 @@
 infile=open('sitin.txt','r')
-r,s=map(int,infile.readline().strip().split())
+r,s=map(int,infile.readline().split())
 nc=int(infile.readline())
 
-np=r*s
-ps=nc-np
-if np>nc:
-    np,ps=nc,0
+np=min(nc,r*s)
+ps=max(0,nc-np)
 
 open('sitout.txt','w').write(str(np)+' '+str(ps))
