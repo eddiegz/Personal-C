@@ -1,29 +1,14 @@
 infile=open('ghostin.txt','r')
 n,k=map(int,infile.readline().strip().split())
-dic={}
-
+x,y,dic=[],[],{}
 for i in range(n):
-    x,t=map(int,infile.readline().strip().split())
-    if x not in dic:
-        dic[x]=[]
-    dic[x].append(t)
-answer=0
-for s in range(1,11):
-    p=0
-    index=0
-    last=list(dic)[-1]
-    time=s
-    while index<=last:
-        if index in dic:
-            for i in dic[index]:
-                if i==time:
-                    p+=1
-        index+=1
-        time+=k
-    answer=max(answer,p)
-            
-    
-
-outfile=open('ghostout.txt','w')
-outfile.write(str(answer))
-outfile.close()
+    a,b=map(int,infile.readline().split())
+    x.append(a)
+    y.append(b)
+time=[k*i for i in x]
+for i in range(n):
+    ts=y[i]-time[i]
+    if ts not in dic:
+        dic[ts]=0
+    dic[ts]+=1
+open('ghostout.txt','w').write(str(max(dic.values())))
