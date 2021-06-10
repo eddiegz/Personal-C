@@ -9,17 +9,13 @@ elif a[0]==target[0] and b[0]==target[0]:
         elif b[sp]!=target[sp]: p=1; break
         sp+=1
 else:
-    answer='PLAN FOILED'
-    state=False
+    answer,state='PLAN FOILED',False
 for i in range(sp,n):
-    if not state:
-        break
+    if not state: break
     if p==1:
         if b[i]==target[i] and a[i]!=target[i]:
-            count+=1
-            p=2
+            count,p=count+1,2
         elif b[i]!=target[i] and a[i]!=target[i]:
-            answer='PLAN FOILED'
             count=False
             break
     elif p==2:
@@ -27,13 +23,11 @@ for i in range(sp,n):
             count+=1
             p=1
         elif b[i]!=target[i] and a[i]!=target[i]:
-            answer='PLAN FOILED'
             count=False
             break
 outfile=open('chimout.txt','w')
 if state and count!=False:
-    outfile.write('SUCCESS\n')
-    outfile.write(str(count))
+    outfile.write('SUCCESS\n'+str(count))
 else:
-    outfile.write(answer)
+    outfile.write('PLAN FOILED')
 outfile.close()
