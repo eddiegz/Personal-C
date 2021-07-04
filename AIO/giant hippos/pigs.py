@@ -5,7 +5,7 @@ length=[]
 for i in range(1,h+1):
     length.append(place[i]-place[i-1]-1)
 length.append(place[-1]-place[-2])
-answer=0
+answer=0 
 modi=length[1:-1]
 modi.sort()
     
