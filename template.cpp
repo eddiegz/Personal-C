@@ -29,11 +29,19 @@ using vvi = vector<vi>;
 #define endl "\n"
 #define all(x) x.begin(),x.end()
 
+void ussetio(string s){
+    freopen((s + ".in").c_str(), "r", stdin);
+    freopen((s + ".out").c_str(), "w", stdout);
+}
+
+void ausetio(string s){
+    freopen((s+"in.txt").c_str(),"r", stdin);
+    freopen((s+"out.txt").c_str(),"w",stdout);
+}
+
 const int MOD=1e9+7;
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
-    freopen("example.in","r",stdin);
-    freopen("example.out","w",stdout);
 }
