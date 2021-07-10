@@ -40,62 +40,31 @@ void ausetio(str inf,str ouf){
 }
 
 const int MOD=1e9+7;
-const int MAXN=1e6;
-bool done[MAXN];
+const int MAXN=1e6+1;
 
+bool lef[MAXN];
+bool rig[MAXN];
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
     ausetio("atlanin.txt","atlanout.txt");
     int n;
     cin>>n;
-    int arr[n],bh[n],nbi[n],nbh[n],bi[n],count=0,sum=0,min=0,nc=0;
-    bool ue=true,al[n],pu=true;
+    int arr[n],answer=0;
     for(int i=0;i<n;++i){
         cin>>arr[i];
     }
+    int ml=0,mr=0;
     for(int i=0;i<n;++i){
-        if(i==0 && arr[i]>=arr[i+1]){bh[count]=arr[i];bi[count]=i;count++;}
-        else if(i==n-1 && arr[i]>=arr[i-1]){bh[count]=arr[i];bi[count]=i;count++;}
-        else{
-            if((arr[i]>arr[i+1] && arr[i]>=arr[i-1]) || (arr[i]>=arr[i+1] && arr[i]>arr[i-1])){
-                bh[count]=arr[i];
-                bi[count]=i;
-                count++;
-            }
-        }
+        if(ml>arr[i]){lef[i]=true;}
+        else{ml=arr[i];}
     }
-    while(ue){
-        for(int i=0;i<count;++i){
-            al[i]=true;
-        }
-        pu=false;
-        for(int i=0;i<count-2;++i){
-            if(bh[i]>=bh[i+1]&&bh[i+1]<=bh[i+2]){
-                if(count>3){pu=true;al[i+1]=false;}
-            }
-        }
-        for(int i=0;i<count;++i){
-            if(al[i]==true){
-                nbi[nc]=bi[i];
-                nbh[nc]=bh[i];
-                nc++;
-            }
-        }
-        for(int i=0;i<nc;++i){
-            bi[i]=nbi[i];
-            bh[i]=nbh[i];
-        }
-        count=nc;
-        nc=0;
-        ue=pu;
+    for(int i=n-1;i>=0;--i){
+        if(mr>arr[i]){rig[i]=true;}
+        else{mr=arr[i];}
     }
-    for(int i=0;i<count-1;++i){
-        if(bh[i]<=bh[i+1]){min=bh[i];}
-        if(bh[i]>bh[i+1]){min=bh[i+1];}
-        for(int j=bi[i]+1;j<bi[i+1];++j){
-            if(arr[j]<min)sum++;
-        }
+    for(int i=0;i<n;++i){
+        if(lef[i]&&rig[i])answer++;
     }
-    cout<<sum<<endl;
+    cout<<answer<<endl;
 }
