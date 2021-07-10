@@ -34,12 +34,13 @@ void ussetio(string s){
     freopen((s + ".out").c_str(), "w", stdout);
 }
 
-void ausetio(string s){
-    freopen((s+"in.txt").c_str(),"r", stdin);
-    freopen((s+"out.txt").c_str(),"w",stdout);
+void ausetio(str inf,str ouf){
+    freopen(inf.c_str(),"r", stdin);
+    freopen(ouf.c_str(),"w",stdout);
 }
 
 const int MOD=1e9+7;
+const int MAXN=1e6;
 
 int main(){
     ios::sync_with_stdio(false);
