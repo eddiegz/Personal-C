@@ -30,7 +30,7 @@ using vvi = vector<vi>;
 #define all(x) x.begin(),x.end()
 
 const int MOD=1e9+7;
-
+ 
 int main() {
     freopen("hippoin.txt","r",stdin);
     freopen("hippoout.txt","w",stdout);
