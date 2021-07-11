@@ -9,6 +9,7 @@ using vl = vector<ll>;
 using vd = vector<ld>; 
 using vs = vector<str>;
 using vvi = vector<vi>;
+using vc = vector<char>;
 #define pb push_back
 #define pob pop_back
 #define si set<int>
