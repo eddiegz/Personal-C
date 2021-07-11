@@ -29,12 +29,12 @@ using vvi = vector<vi>;
 #define endl "\n"
 #define all(x) x.begin(),x.end()
 
-void ussetio(string s){
+void inoutio(string s){
     freopen((s + ".in").c_str(), "r", stdin);
     freopen((s + ".out").c_str(), "w", stdout);
 }
 
-void ausetio(str inf,str ouf){
+void txtio(str inf,str ouf){
     freopen(inf.c_str(),"r", stdin);
     freopen(ouf.c_str(),"w",stdout);
 }
