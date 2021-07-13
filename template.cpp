@@ -25,6 +25,7 @@ using vvc = vector<vc>;
 #define mis map<int,str>
 #define mci map<char,int>
 #define mdd map<double,double>
+#define mll map<ll,ll>
 #define pii pair<int,int>
 #define pis pair<int,str>
 #define psi pair<str,int>
@@ -32,6 +33,8 @@ using vvc = vector<vc>;
 #define pci pair<char,int>
 #define endl "\n"
 #define all(x) x.begin(),x.end()
+#define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
+#define repR( i , e , s ) for(int i = e ; i >= s ; --i)
 
 void inoutio(string s){
     freopen((s + ".in").c_str(), "r", stdin);
