@@ -10,6 +10,7 @@ using vd = vector<ld>;
 using vs = vector<str>;
 using vvi = vector<vi>;
 using vc = vector<char>;
+using vvc = vector<vc>;
 #define pb push_back
 #define pob pop_back
 #define si set<int>
@@ -20,12 +21,14 @@ using vc = vector<char>;
 #define sf scanf
 #define pf printf
 #define mii map<int,int>
-#define msi map<string,int>
+#define msi map<str,int>
+#define mis map<int,str>
 #define mci map<char,int>
 #define mdd map<double,double>
 #define pii pair<int,int>
-#define psi pair<string,int>
-#define pss pair<string,string>
+#define pis pair<int,str>
+#define psi pair<str,int>
+#define pss pair<str,str>
 #define pci pair<char,int>
 #define endl "\n"
 #define all(x) x.begin(),x.end()
@@ -36,8 +39,8 @@ void inoutio(string s){
 }
 
 void txtio(str inf,str ouf){
-    freopen(inf.c_str(),"r", stdin);
-    freopen(ouf.c_str(),"w",stdout);
+    freopen(inf.c_str(), "r" , stdin);
+    freopen(ouf.c_str(), "w" , stdout);
 }
 
 const int MOD=1e9+7;
