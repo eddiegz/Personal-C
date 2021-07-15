@@ -52,4 +52,5 @@ const int MAXN=1e6;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
+    // The driver code goes here
 }
