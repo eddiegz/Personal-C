@@ -1,16 +1,6 @@
 #include <bits/stdc++.h>
-using namespace std;
-using ll = long long;
-using ld = long double;
-using str = string;
-using vi = vector<int>;
-using vb = vector<bool>;
-using vl = vector<ll>;
-using vd = vector<ld>; 
-using vs = vector<str>;
-using vvi = vector<vi>;
-using vc = vector<char>;
-using vvc = vector<vc>;
+using namespace std;using ll = long long;using ld = long double;using str = string;using vi = vector<int>;using vb = vector<bool>;
+using vl = vector<ll>;using vd = vector<ld>;using vs = vector<str>;using vvi = vector<vi>;using vc = vector<char>;using vvc = vector<vc>;
 #define pb push_back
 #define pob pop_back
 #define si set<int>
