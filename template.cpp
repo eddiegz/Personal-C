@@ -13,6 +13,7 @@ using vc = vector<char>;
 using vvc = vector<vc>;
 #define pb push_back
 #define pob pop_back
+#define mp make_pair
 #define si set<int>
 #define sl set<ll>
 #define sb set<bool>
