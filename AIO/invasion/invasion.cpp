@@ -85,7 +85,7 @@ int main(){
             }
         }
     }
-    for(auto ele : name){
+    for(pair<char,set<char>> ele : name){
         int length=ele.ss.size();
         ans=max(ans,length);
     }
