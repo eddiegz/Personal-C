@@ -8,8 +8,8 @@ using vb = vector<bool>;
 using vl = vector<ll>;
 using vd = vector<ld>; 
 using vs = vector<str>;
-using vvi = vector<vi>;
 using vc = vector<char>;
+using vvi = vector<vi>;
 using vvc = vector<vc>;
 #define pb push_back
 #define pob pop_back
@@ -32,14 +32,15 @@ using vvc = vector<vc>;
 #define psi pair<str,int>
 #define pss pair<str,str>
 #define pci pair<char,int>
+#define pcc pair<char,char>
 #define endl "\n"
 #define all(x) x.begin(),x.end()
 #define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
 #define repR( i , e , s ) for(int i = e ; i >= s ; --i)
 
-void inoutio(string s){
-    freopen((s + ".in").c_str(), "r", stdin);
-    freopen((s + ".out").c_str(), "w", stdout);
+void inoutio(str s){
+    freopen((s + ".in").c_str(), "r" , stdin);
+    freopen((s + ".out").c_str(), "w" , stdout);
 }
 
 void txtio(str inf,str ouf){
@@ -53,5 +54,4 @@ const int MAXN=1e6;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
-    // The driver code goes here
 }
