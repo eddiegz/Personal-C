@@ -17,6 +17,7 @@ using vvc = vector<vc>;
 #define si set<int>
 #define sl set<ll>
 #define sb set<bool>
+#define sc set<char>
 #define ff first
 #define ss second
 #define sf scanf
