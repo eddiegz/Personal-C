@@ -55,13 +55,13 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
     txtio("debtsin.txt","debtsout.txt");
-    int n,total=0,id,count=0;
+    int n,total=0,id;
     cin>>n;
     int arr[n];
     int current=n;
     rep(i,0,n-1){cin>>arr[i];}
     rep(i,0,n-1){
-        total=arr[i];count++;id=1;
+        total=arr[i];id=1;
         while(total<=0 && current==n){
             total+=arr[(id+i)%n];id++;
             if(total==0 && id>n-2){
