@@ -2,6 +2,7 @@
 using namespace std;
 using ll = long long;
 using ld = long double;
+using ull = unsigned long long;
 using str = string;
 using vi = vector<int>;
 using vb = vector<bool>;
@@ -58,5 +59,5 @@ const int MAXN=1e6;
 
 int main(){
     ios::sync_with_stdio(false);
-    cin.tie(0);cout.tie(0);
+    cin.tie(nullptr);cout.tie(nullptr);
 }
