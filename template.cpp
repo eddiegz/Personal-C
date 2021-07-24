@@ -41,7 +41,7 @@ using vvc = vector<vc>;
 #define all(x) x.begin(),x.end()
 #define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
 #define repR( i , e , s ) for(int i = e ; i >= s ; --i)
-#define dtest(x) cout<<x<<endl;
+#define dtest(x,p) cout<<x<<"p"<<endl;
 #define arprint(x) for(auto ele:x){cout<<ele<<" ";}cout<<endl;
 
 void inoutio(str s){
