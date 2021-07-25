@@ -41,12 +41,12 @@ using vvc = vector<vc>;
 #define all(x) x.begin(),x.end()
 #define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
 #define repR( i , e , s ) for(int i = e ; i >= s ; --i)
-#define dtest(x,p) cout<<x<<"p"<<endl;
+#define dtest(x,p) cout<<x<<"debug"<<" "<<p<<endl;
 #define arprint(x) for(auto ele:x){cout<<ele<<" ";}cout<<endl;
 
 void inoutio(str s){
     freopen((s + ".in").c_str(), "r" , stdin);
-    freopen((s + ".out")    .c_str(), "w" , stdout);
+    freopen((s + ".out").c_str(), "w" , stdout);
 }
 
 void txtio(str inf,str ouf){
