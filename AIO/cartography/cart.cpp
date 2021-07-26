@@ -67,7 +67,7 @@ int main(){
 	int current;
 	int cross=r*c;
 	bool found=true;
-	int xx[cross], yy[cross];
+	int xx[cross],yy[cross];
 	for(int j=0; j<r; j++){
         scanf("%c",&tmp); 
         for(int i=0; i<c; i++){
