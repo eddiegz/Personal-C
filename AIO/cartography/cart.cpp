@@ -59,7 +59,7 @@ const int MAXN=1e6;
 
 int main(){
     txtio("cartin.txt","cartout.txt");
-    int r,c,diff;
+	int r,c,diff;
 	char tmp;
 	int count=0;
 	scanf("%d %d",&c,&r);
