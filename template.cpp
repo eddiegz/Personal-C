@@ -41,7 +41,7 @@ using vvc = vector<vc>;
 #define all(x) x.begin(),x.end()
 #define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
 #define repR( i , e , s ) for(int i = e ; i >= s ; --i)
-#define dtest(x,p) cout<<x<<"debug"<<" "<<p<<endl;
+#define dtest(x,p) cout<<x<<" debug"<<" "<<p<<endl;
 #define arprint(x) for(auto ele:x){cout<<ele<<" ";}cout<<endl;
 
 void inoutio(str s){
@@ -56,6 +56,7 @@ void txtio(str inf,str ouf){
 
 const int MOD=1e9+7;
 const int MAXN=1e6;
+const int INF=INT_MAX;
 
 int main(){
     ios::sync_with_stdio(false);
