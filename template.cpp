@@ -38,12 +38,15 @@ using vvc = vector<vc>;
 #define pss pair<str,str>
 #define pci pair<char,int>
 #define pcc pair<char,char>
+#define vpii vector<pii>
+#define qi queue<int>
 #define endl "\n"
 #define all(x) x.begin(),x.end()
 #define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
 #define repR( i , e , s ) for(int i = e ; i >= s ; --i)
 #define dtest(x,p) cerr<<x<<" debug"<<" "<<p<<endl;
 #define arprint(x) for(auto ele:x){cout<<ele<<" ";}cout<<endl;
+#define DEBUG
 
 void inoutio(str s){
     freopen((s + ".in").c_str(), "r" , stdin);
