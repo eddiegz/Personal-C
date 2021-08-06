@@ -66,8 +66,7 @@ int main(){
     #ifndef DEBUG
     txtio("cartin.txt","cartout.txt");
     #endif
-    set<pii> have;
-    int h,w,ans=0,cc=0;
+    int h,w,ans=0;
     char grid[MAXN][MAXN];
     cin>>h>>w;
     rep(i,1,h){
