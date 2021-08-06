@@ -39,7 +39,7 @@ using vvc = vector<vc>;
 #define pci pair<char,int>
 #define pcc pair<char,char>
 #define vpii vector<pii>
-#define qi queue<int>
+#define qpii queue<pii>
 #define endl "\n"
 #define all(x) x.begin(),x.end()
 #define rep( i , s , e ) for(int i = s ; i <= e ; ++i)
