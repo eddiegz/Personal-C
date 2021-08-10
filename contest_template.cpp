@@ -2,10 +2,6 @@
 using namespace std;
 using ll = long long;
 using str = string;
-#define pb push_back
-#define mp make_pair
-#define ff first
-#define ss second
 #define endl "\n"
 #define all(x) x.begin(),x.end()
 #define DEBUG
