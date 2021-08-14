@@ -1,9 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-using str = string;
 #define endl "\n"
-#define all(x) x.begin(),x.end()
 #define DEBUG
 
 const int MOD=1e9+7;
