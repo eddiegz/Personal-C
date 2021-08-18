@@ -15,4 +15,3 @@ for i in dic:
 outfile=open('cavalryout.txt','w')
 outfile.write(answer)
 outfile.close()
-    
