@@ -7,7 +7,7 @@ vector<int> arr;
 
 void solve(){
     cin >> n;
-	for(int i=0,x;i<n;i++){
+    for(int i=0,x;i<n;i++){
 		cin >> x;
 		auto index=upper_bound(arr.begin(),arr.end(),x);
 		if(index==arr.end()) arr.push_back(x);
