@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#pragma GCC optimize("Ofast")
-#pragma GCC target("avx,avx2,fma")
 //#define DEBUG
 
 int n,x;
@@ -11,14 +9,9 @@ void solve(){
     cin >> n;
 	for(int i=0,x;i<n;i++){
 		cin >> x;
-		int low=0, high=(int)arr.size();
-		while(low<high){
-			int mid=(low+high)/2;
-			if(arr[mid]>x) high=mid;
-			else low=mid+1;
-		}
-		if(low==(int)arr.size()) arr.push_back(x);
-		else arr[low]=x;
+		auto index=upper_bound(arr.begin(),arr.end(),x);
+		if(index==arr.end()) arr.push_back(x);
+		else arr[index-arr.begin()]=x;
 	}
 	cout << arr.size();
 }
