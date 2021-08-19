@@ -23,5 +23,5 @@ int main(){
     freopen("dollin.txt","r",stdin);
     freopen("dollout.txt","w",stdout);
     #endif
-    solve();
+    solve(); 
 }
