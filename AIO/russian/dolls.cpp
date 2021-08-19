@@ -7,13 +7,13 @@ vector<int> arr;
 
 void solve(){
     cin >> n;
-	for(int i=0,x;i<n;++i{
-		cin>>x;
-		auto index=upper_bound(arr.begin(),arr.end(),x);
-		if(index==arr.end()) arr.push_back(x);
-		else arr[index-arr.begin()]=x;
-	}
-	cout<<arr.size<<endl;
+    for(int i=0,x;i<n;++i{
+	cin>>x;
+	auto index=upper_bound(arr.begin(),arr.end(),x);
+	if(index==arr.end()) arr.push_back(x);
+	else arr[index-arr.begin()]=x;
+    }
+    cout<<arr.size<<endl;
 }
 
 int main(){
