@@ -20,7 +20,7 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);cout.tie(nullptr);
     #ifndef DEBUG
-    freopen("dollin.txt","r",stdin);
+    freopen("dollin.txt","r",stdin); 
     freopen("dollout.txt","w",stdout);
     #endif
     solve();
